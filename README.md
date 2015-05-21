@@ -5,7 +5,7 @@ Wouldn’t it be easy if you had a visual summary of all your projects? Our buil
 
 Those of you who are familiar with Visual Studio Online (VSO) or Team Foundation Server (TFS), know that keeping tabs on current projects isn’t an easy task. Each page has to be visited separately, this is a very time-consuming process. At Orbit One a desktop application was used to simplify this. The lack of a VSO implementation and the dated user-interface convinced us to write our own build screen as a web application. This web application has several advantages: setup is one-time process, making it readily available for everyone to use. Furthermore, it’s accessible on every device with a modern browser, this way everyone can take advantage of the application anytime, anywhere. The interface has been designed to be user-friendly, with time-saving features.
 
-![alt tag](http://blog.orbitone.com/image.axd?picture=2015-04-14-15_46_34-Buildscreen_thum.png)
+![buildscreen image](https://cloud.githubusercontent.com/assets/9320366/7746306/86a4484a-ffb1-11e4-852b-ec448c6353ce.png)
 
 ####Supported statuses
 * Green: a succeeded build
@@ -20,11 +20,14 @@ When a project fails to build successfully, a circle is displayed with additiona
 ####Filter
 You can perform a simple search operation in the navigation bar, this will search on builddefinition name and on team project name. If you want to have a more advanced filter you can enable advanced filter, click on the "filter options" option and a modal will appear. In this modal you can type in the Team Project Name or the Buildname of the builds you want see, this list is complementary (OR relation). On the bottom of this modal you can filter the builds by age, for example you will only see the builds of the last month. This feature is subtractive to the previous two (AND relation).
 
-Hier komt nog afbeelding (hosten op github).
+![filtering image](https://cloud.githubusercontent.com/assets/9320366/7746302/7fdaca2a-ffb1-11e4-9cf0-29c2a7fa1d21.png)
 
 ####Configuration
 The configuration page makes it easy to add a Visual Studio Online or Team Foundation Server account.
 Just fill in a name of choice, the server URL, a VSO/TFS username and password and that's it. 
+
+![configuration image](https://cloud.githubusercontent.com/assets/9320366/7746303/7fe1e5da-ffb1-11e4-9674-fb066031dadf.png)
+
 >Don't forget, to be able to use a VSO account, you have to enable [alternate credentials](https://www.visualstudio.com/en-us/integrate/get-started/auth/overview)!
 
 >Because of the authentication requirements of Team Foundation Server,  the TFS implementation only works On Premise!
