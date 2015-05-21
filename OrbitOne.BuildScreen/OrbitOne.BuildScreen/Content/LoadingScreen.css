@@ -1,0 +1,62 @@
+﻿@-webkit-keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes glow {
+  0%{ text-shadow:0 0 1px #FFFFCC; }
+  50%{ text-shadow:0 0 5px #FFFFCC; }
+  100%{ text-shadow:0 0 1px #FFFFCC; }
+}
+@keyframes glow {
+  0%{ text-shadow:0 0 1px #FFFFCC; }
+  50%{ text-shadow:0 0 5px #FFFFCC; }
+  100%{ text-shadow:0 0 1px #FFFFCC; }
+}
+.rotating {
+    -webkit-animation:  spinning 2s ease infinite; 
+    -moz-animation:     spinning 2s ease infinite; 
+    -o-animation:       spinning 2s ease infinite; 
+    -ms-animation:      spinning 2s ease infinite;
+    animation:          spinning 2s ease infinite;
+}
+
+#orbitOneSpinner {
+    margin: 3vw;
+    width: 15%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.orbitOneLoader{
+    position:fixed;
+	width: 100%;
+    top:20%;
+    left: 0%;
+}
+.loadingtext{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Quattrocento Sans';
+    color: white;
+    -webkit-animation: glow 2s ease-in-out infinite;
+    -moz-animation: glow 2s ease-in-out infinite;
+    -ms-animation: glow 2s ease-in-out infinite;
+    -o-animation: glow 2s ease-in-out infinite;
+    animation: glow 2s ease-in-out infinite;
+}
+.smallerText {
+    font-size: 2vw;
+}

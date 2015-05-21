@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2044920-AD64-4476-A57D-59A4D45E0507}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrbitOne.BuildScreen.RestApiService</RootNamespace>
+    <AssemblyName>OrbitOne.BuildScreen.RestApiService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dtos\Build.cs" />
+    <Compile Include="Dtos\BuildDefinition.cs" />
+    <Compile Include="VsoHelperClass.cs" />
+    <Compile Include="Dtos\JsonWrapper.cs" />
+    <Compile Include="Dtos\TeamProject.cs" />
+    <Compile Include="Dtos\TestResult.cs" />
+    <Compile Include="Dtos\Tests.cs" />
+    <Compile Include="IHelperClass.cs" />
+    <Compile Include="StatusEnum.cs" />
+    <Compile Include="VsoRestService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OrbitOne.BuildScreen.Configuration\OrbitOne.BuildScreen.Configuration.csproj">
+      <Project>{28B2602A-F3AA-47E5-ADB5-A699CC2982CD}</Project>
+      <Name>OrbitOne.BuildScreen.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrbitOne.BuildScreen.Models\OrbitOne.BuildScreen.Models.csproj">
+      <Project>{0086B2C2-E19B-4408-B1DF-FC45CB137938}</Project>
+      <Name>OrbitOne.BuildScreen.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrbitOne.BuildScreen.Services\OrbitOne.BuildScreen.Services.csproj">
+      <Project>{0B712711-DD70-43E8-AE87-92CE662B97B5}</Project>
+      <Name>OrbitOne.BuildScreen.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

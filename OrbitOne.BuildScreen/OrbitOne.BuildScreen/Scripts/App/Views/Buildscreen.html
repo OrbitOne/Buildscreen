@@ -1,0 +1,22 @@
+﻿
+
+<div ng-if="isLoading" ng-cloak>
+    <div class="orbitOneLoader">
+        <img id="orbitOneSpinner" class="rotating" src="/Images/Orbit_one_circle.png"/>
+        <p class="loadingtext">Buildscreen is loading</p>
+        <p class="loadingtext smallerText">Powered by Orbit One</p>
+    </div>
+</div>
+
+<div class="error-container" ng-show="errorRest" >
+    <i class="icon-attention-circled"></i>{{errorMessage}}
+</div>
+
+<div class="builds-container">
+    <div class="isotope" ng-hide="isLoading && !errorRest">
+
+        <div ng-repeat="build in builds track by $index" build-item>
+
+        </div>
+    </div>
+</div>

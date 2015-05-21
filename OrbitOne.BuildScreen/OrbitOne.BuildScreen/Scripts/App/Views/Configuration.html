@@ -1,0 +1,158 @@
+﻿
+<div class="container">
+    <h1>Configuration</h1>
+    <!--<h2>Configuration</h2>-->
+    
+    <div class="overview-container">
+        <div ng-repeat="config in configurations" class="overview-element-container">
+
+            <div class="overview-element background-orange" ng-class="[config.ServiceType === 'VSO'? 'background-orange' : 'background-blue']">
+                <p>{{::config.Name | titleFilter:9}}</p>
+                <div class="button-container" ng-hide="hideButtons">
+                    <button class="circle-button" ng-click="openConfirmModal(config)"><i class="icon-trash-empty"></i></button>
+                    <button class="circle-button" ng-click="edit = !edit; toggleButtons(); makeConfigCopy(config)"><i class=" icon-pencil"></i></button>
+                </div>
+                <span class="background-text">{{config.ServiceType}}</span>
+            </div>
+
+            <!--<form name="editForm" ng-show="edit" class="form" data-ng-submit="editConfiguration(config); edit = !edit; toggleButtons(); editForm.$setPristine()">-->
+            
+            <form name="editForm" ng-show="edit" class="form" data-ng-submit="editConfiguration(config)">
+                <p ng-show="hasEditServerError" class="serverErrorMessage"><i class="icon-attention-circled"></i>{{editErrorMessage}}</p>
+                <fieldset class="form-fieldset ui-input">
+                    <input name="editName" class="filled" type="text" id="edit-name" data-ng-model="config.Name" tabindex="0" ng-blur="onBlur($event)" required/>
+                    <label for="edit-name">
+                        <span data-text="Name">Name</span>
+                        <span data-text="is required" ng-show="editForm.editName.$invalid && !editForm.editName.$pristine"> is required</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-fieldset ui-input">
+                    <input name="editUrl" class="filled" type="url" id="edit-url" data-ng-model="config.Uri" tabindex="0" ng-blur="onBlur($event)" required />
+                    <label for="edit-url">
+                        <span data-text="URL">URL</span>
+                        <span data-text="is not a valid URL" ng-show="editForm.editUrl.$invalid && !editForm.editUrl.$pristine"> is not a valid URL</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-fieldset ui-input">
+                    <input name="editUsername" class="filled" type="text" id="edit-username" data-ng-model="config.Username" tabindex="0" ng-blur="onBlur($event)" required/>
+                    <label for="edit-username">
+                        <span data-text="Username">Username</span>
+                        <span data-text="is required" ng-show="editForm.editUsername.$invalid && !editForm.editUsername.$pristine"> is required.</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-fieldset ui-input">
+                    <input name="editPassword" class="filled" type="password" id="edit-password" data-ng-model="config.Password" tabindex="0" ng-blur="onBlur($event)" required/>
+                    <label for="edit-password">
+                        <span data-text="Password">Password</span>
+                        <span data-text="is required" ng-show="editForm.editPassword.$invalid && !editForm.editPassword.$pristine"> is required.</span>
+                    </label>
+                </fieldset>
+
+                <div class="form-footer button-container ">
+                    <!--<span type="submit" class="circle-button" ng-click="edit = !edit"><i class="icon-ok"></i></span>-->
+                    <button type="submit" class="circle-button" ng-disabled="editForm.$invalid">
+                        <i class="icon-ok"></i>
+                    </button>
+                    <button type="button" class="circle-button" ng-click="edit = !edit; toggleButtons(); cancelEditConfig(config); tfsForm.$setPristine(); clearEditErrorMessage()"><i class="icon-cancel"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <hr/>
+    <div class="btn-container">
+        <button class="btn background-orange" ng-click="showNewVso = !showNewVso; showNewTfs ? showNewTfs = !showNewTfs : showNewTfs; clearErrorMessage()">New VSO</button>
+        <button class="btn background-blue" ng-click="showNewTfs = !showNewTfs; showNewVso ? showNewVso = !showNewVso : showNewVso; clearErrorMessage()">New TFS</button>
+    </div>
+    <form name="vsoForm" ng-show="showNewVso" class="form" data-ng-submit="createConfiguration('VSO', vsoForm)" autocomplete="off" novalidate>
+        <p ng-show="hasServerError" class="serverErrorMessage"><i class="icon-attention-circled"></i>{{errorMessage}}</p>
+        <fieldset class="form-fieldset ui-input">
+            <input type="text" name="vsoName" id="vso-name" data-ng-model="newVsoConfig.Name" tabindex="0" ng-blur="onBlur($event)" required />
+            <label for="vso-name">
+                <span data-text="VSO Name">VSO Name</span>
+                <span data-text="is required" ng-show="vsoForm.vsoName.$invalid && !vsoForm.vsoName.$pristine"> is required</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="url" name="vsoUrl" id="vso-url" ng-pattern="/^(https:\/\/)([\da-z\.-]+)\.(visualstudio.com)$/" data-ng-model="newVsoConfig.Uri" tabindex="0" ng-blur="onBlur($event)" required />
+            <label for="vso-url">
+                <span data-text="VSO URL">VSO URL</span>
+                <span data-text="is not a valid url" ng-show="vsoForm.vsoUrl.$invalid && !vsoForm.vsoUrl.$pristine"> is not a valid url</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="text" name="vsoUsername" id="vso-username" data-ng-model="newVsoConfig.Username" tabindex="0" ng-blur="onBlur($event)" required />
+            <label for="vso-username">
+                <span data-text="VSO Username">VSO Username</span>
+                <span data-text="is required" ng-show="vsoForm.vsoUsername.$invalid && !vsoForm.vsoUsername.$pristine"> is required</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="password" name="vsoPassword" id="vso-password" data-ng-model="newVsoConfig.Password" tabindex="0" ng-blur="onBlur($event)" required />
+            <label for="vso-password">
+                <span data-text="VSO Password">VSO Password</span>
+                <span data-text="is required" ng-show="vsoForm.vsoPassword.$invalid && !vsoForm.vsoPassword.$pristine"> is required</span>
+            </label>
+        </fieldset>
+
+        <div class="form-footer button-container ">
+            <!--<span type="submit" class="circle-button" ng-click="showNewVso = !showNewVso"><i class="icon-ok"></i></span>-->
+
+            <button type="submit" class="circle-button" ng-disabled="vsoForm.$invalid">
+                <i class="icon-ok"></i>
+            </button>
+
+            <button type="button" class="circle-button" ng-click="showNewVso = !showNewVso; vsoForm.$setPristine(); clearErrorMessage()"><i class="icon-cancel"></i></button>
+        </div>
+    </form>
+    <form name="tfsForm" ng-show="showNewTfs" class="form" data-ng-submit="createConfiguration('TFS', tfsForm)" autocomplete="off" novalidate>
+        <p ng-show="hasServerError" class="serverErrorMessage"><i class="icon-attention-circled"></i>{{errorMessage}}</p>
+        <fieldset class="form-fieldset ui-input">
+            <input type="text" name="tfsName" id="tfs-name" data-ng-model="newTfsConfig.Name" tabindex="0" ng-blur="onBlur($event)" required/>
+            <label for="tfs-name">
+                <span data-text="TFS Name">TFS Name</span>
+                <span data-text="is required" ng-show="tfsForm.tfsName.$invalid && !tfsForm.tfsName.$pristine"> is required.</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="url" name="tfsUrl" id="tfs-url" ng-pattern="/^(https?:\/\/)([\da-z\.-:]+)(\/tfs)$/" data-ng-model="newTfsConfig.Uri" tabindex="0" ng-blur="onBlur($event)" required/>
+            <label for="tfs-url">
+                <span data-text="TFS URL">TFS URL</span>
+                <span data-text="is not a valid URL" ng-show="tfsForm.tfsUrl.$invalid && !tfsForm.tfsUrl.$pristine"> is not a valid URL</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="text" name="tfsUsername" id="tfs-username" data-ng-model="newTfsConfig.Username" tabindex="0" ng-blur="onBlur($event)" required/>
+            <label for="tfs-username">
+                <span data-text="TFS username">TFS username</span>
+                <span data-text="is required" ng-show="tfsForm.tfsUsername.$invalid && !tfsForm.tfsUsername.$pristine"> is required</span>
+            </label>
+        </fieldset>
+
+        <fieldset class="form-fieldset ui-input">
+            <input type="password" name="tfsPassword" id="tfs-password" data-ng-model="newTfsConfig.Password" tabindex="0" ng-blur="onBlur($event)" required/>
+            <label for="tfs-password">
+                <span data-text="TFS Password">TFS Password</span>
+                <span data-text="is required" ng-show="tfsForm.tfsPassword.$invalid && !tfsForm.tfsPassword.$pristine"> is required.</span>
+            </label>
+        </fieldset>
+
+        <div class="form-footer">
+            <!--<span type="submit" class="circle-button" ng-click="showNewTfs = !showNewTfs"><i class="icon-ok"></i></span>-->
+            <button type="submit" class="circle-button" ng-disabled="tfsForm.$invalid">
+                <i class="icon-ok"></i>
+            </button>
+            <button type="button" class="circle-button" ng-click="showNewTfs = !showNewTfs; tfsForm.$setPristine(); clearErrorMessage()"><i class="icon-cancel"></i></button>
+        </div>
+    </form>
+
+</div>

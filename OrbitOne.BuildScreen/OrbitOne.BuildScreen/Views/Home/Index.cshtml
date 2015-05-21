@@ -1,0 +1,79 @@
+﻿@using ClientDependency.Core.Mvc
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Buildscreen</title>
+    <base href="/">
+    @{ Html.RequiresCssFolder("~/Content/"); }
+    @Html.RenderCssHere()
+</head>
+<body>
+
+    <div ng-app="BuildScreenApp">
+        <div id="container-for-menu" class="container-for-menu" ng-cloak>
+            <div class="pusher">
+                <div ng-controller="NavigationController">
+                    <div id="swipeAnchor" ng-swipe-right="showNavigation()"></div>
+                    <nav class="nav-menu-effect nav-menu">
+                        <ul>
+                            <li class="hover-cursor" ng-click="closeNavigation(); navigateTo('/')"><i class="icon-th"></i>Buildscreen</li>
+                            <li class="hover-cursor" ng-click="closeNavigation(); navigateTo('/config')"><i class="icon-cog"></i>Configuration</li>
+                            <li class="hover-cursor" ng-click="openInfoModal(); closeNavigation()"><i class="icon-info"></i>About</li>
+                            <li ng-show="showSearch()" id="filterCheckbox">
+                                <span class="FilterText"><i class="icon-filter"></i>Advanced</span>
+                                <div class="switch">
+                                    <input type="checkbox" ng-model="search.model.checkValue" ng-change="search.updateAdvancedFilterBool()" id="advancedCheckbox" class="cmn-toggle cmn-toggle-round-flat" />
+                                    <label for="advancedCheckbox"></label>
+                                </div>
+                            </li>
+                            <li ng-hide="search.model.checkValue || !showSearch()">
+                                <div class="menu-input">
+                                    <input type="search" id="search-in-menu" placeholder="&#128269; Search" ng-model="search.searchKey" ng-change="search.updateSimpleFilter()" ng-model-options="{debounce: {'default':500, 'blur':0}}" />
+                                    <label></label>
+                                </div>
+                            </li>
+                            <li class="hover-cursor" ng-hide="!search.model.checkValue || !showSearch()" ng-click="openFilterModal(); closeNavigation()">
+                                <i class="icon-sliders"></i>Filter options
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+                <div class="page-content">
+                    <!-- this is the wrapper for the content -->
+                    <div class="page-content-inner">
+                        <div id="menuButton" class="icon-circle"><i class="icon-menu"></i></div>
+                            <div ng-view></div>
+                        </div>
+                </div><!-- page-content-inner -->
+            </div><!-- page-content -->
+        </div>
+    </div>
+<!-- SCRIPTS -->
+   @{ Html.RequiresJs("~/Scripts/angular.min.js", 1)
+           .RequiresJs("~/Scripts/angular-animate.min.js", 1)
+           .RequiresJs("~/Scripts/angular-route.min.js", 1)
+           .RequiresJs("~/Scripts/angular-resource.min.js", 1)
+           .RequiresJs("~/Scripts/angular-touch.min.js", 1)
+           .RequiresJs("~/Scripts/ngDialog.min.js", 1)
+           .RequiresJs("~/Scripts/ng-tags-input.min.js", 1)
+           .RequiresJs("~/Scripts/isotope.pkgd.min.js", 1)
+           .RequiresJs("~/Scripts/packery-mode.pkgd.js", 1)
+           .RequiresJs("~/Scripts/moment.min.js", 1)
+           .RequiresJs("~/Scripts/aes.js", 1)
+           .RequiresJsFolder("~/Scripts/App/Filters/", 1)
+           .RequiresJs("~/Scripts/App/BuildScreenApp.js", 2)
+           .RequiresJsFolder("~/Scripts/App/Controllers/", 3)
+           .RequiresJsFolder("~/Scripts/App/Directives/", 3)
+           .RequiresJsFolder("~/Scripts/App/Services/", 3)
+          ;}
+    @Html.RenderJsHere()
+</body>
+</html>

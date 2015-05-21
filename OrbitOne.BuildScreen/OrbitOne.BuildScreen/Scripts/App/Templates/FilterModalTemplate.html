@@ -1,0 +1,36 @@
+﻿<h1>Filters</h1>
+<hr />
+<h2>Teamproject Name</h2>
+<tags-input add-from-autocomplete-only="true" replace-spaces-with-dashes="false" placeholder="Include Team Project by name" on-tag-added="ListChanged()" on-tag-removed="ListChanged()" ng-model="TeamProjectTags">
+    <auto-complete debounce-delay="0" min-length="1" select-first-match="true" source="possibleTeamProjectTags($query)"></auto-complete>
+</tags-input>
+<h2>Buildname</h2>
+<tags-input add-from-autocomplete-only="true" replace-spaces-with-dashes="false" placeholder="Include build by name" on-tag-added="ListBuildNameTagsChanged()" on-tag-removed="ListBuildNameTagsChanged()" ng-model="BuilddefinitionTags">
+    <auto-complete debounce-delay="0" min-length="1" select-first-match="true" source="possibleBuildNameTags($query)"></auto-complete>
+</tags-input>
+<h2>Date</h2>
+<p ng-if="dateFilter.week !== 0 || dateFilter.month !== 0">
+    Showing the builds since 
+    <ng-pluralize count="dateFilter.week"
+                  when="{'1':' {} week','other':' {} weeks'}"></ng-pluralize>
+    and <ng-pluralize count="dateFilter.month"
+              when="{'1':' {} month', 'other':' {} months'}"></ng-pluralize> ago.</p>
+<p ng-if="dateFilter.week === 0 && dateFilter.month === 0">Showing all the builds.</p>
+<table class="date-table">
+    <tr>
+        <th>Weeks</th>
+        <th>Months</th>
+    </tr>
+    <tr>
+        <td ng-click="addToDate('week')"><i class="icon-up-open" /></td>
+        <td ng-click="addToDate('month')"><i class="icon-up-open" /></td>
+    </tr>
+    <tr>
+        <td><input type="text" ng-model="dateFilter.week" ng-change="updateDateElement()" ng-model-options="{debounce: {'default':500, 'blur':0}}" /></td>
+        <td><input type="text" ng-model="dateFilter.month" ng-change="updateDateElement()" ng-model-options="{debounce: {'default':500, 'blur':0}}" /></td>
+    </tr>
+    <tr>
+        <td ng-click="subtractFromDate('week')"><i class="icon-down-open" /></td>
+        <td ng-click="subtractFromDate('month')"><i class="icon-down-open" /></td>
+    </tr>
+</table>
