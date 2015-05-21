@@ -5,7 +5,9 @@ Wouldn’t it be easy if you had a visual summary of all your projects? Our buil
 
 Those of you who are familiar with Visual Studio Online (VSO) or Team Foundation Server (TFS), know that keeping tabs on current projects isn’t an easy task. Each page has to be visited separately, this is a very time-consuming process. At Orbit One a desktop application was used to simplify this. The lack of a VSO implementation and the dated user-interface convinced us to write our own build screen as a web application. This web application has several advantages: setup is one-time process, making it readily available for everyone to use. Furthermore, it’s accessible on every device with a modern browser, this way everyone can take advantage of the application anytime, anywhere. The interface has been designed to be user-friendly, with time-saving features.
 
-![buildscreen image](https://cloud.githubusercontent.com/assets/9320366/7746306/86a4484a-ffb1-11e4-852b-ec448c6353ce.png)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=tJ5K4H6Wu_k
+" target="_blank"><img src="http://img.youtube.com/vi/tJ5K4H6Wu_k/0.jpg" 
+alt="promotional video" width="480" height="360" border="10" /></a>
 
 ####Supported statuses
 * Green: a succeeded build
@@ -76,7 +78,13 @@ Want to contribute? Great!
 
 The possibilities to improve and extend our web applications are endless.
 
+###Tutorial
 
+Please watch our detailed tutorial for a smooth setup.
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=SRwHXUJyNuc
+" target="_blank"><img src="http://img.youtube.com/vi/SRwHXUJyNuc/0.jpg" 
+alt="tutorial video" width="240" height="180" border="10" /></a>
 
 License
 ---- 
