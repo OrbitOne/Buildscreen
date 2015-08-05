@@ -146,7 +146,7 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                         TeamProjectCollection = teamProjectCollection.Name,
                         TotalNumberOfTests = 0,
                         Id = "TFS" + teamProjectNode.Resource.Identifier + def.Id,
-                        BuildReportUrl = _helperClass.GetReportUrl(teamProjectCollection.Name, teamProjectNode.Resource.DisplayName, build.Uri.OriginalString)
+                        BuildReportUrl = _helperClass.GetReportUrl(teamProjectCollection.Uri.ToString(), teamProjectNode.Resource.DisplayName, build.Uri.OriginalString)
                     };
                     //Retrieve testruns
                     var testResults = GetTestResults(teamProjectNode, testService, build);

@@ -35,17 +35,7 @@ namespace OrbitOne.BuildScreen.Services.Tfs
         }
         public string GetReportUrl(string tpc, string tp, string buildUri)
         {
-            var basic = "";
-            if (tpc.Contains("https"))
-            {
-                basic = tpc;
-            }
-            else
-            {
-                basic = "https://" + tpc.Replace("\\", "/tfs/");
-            }
-            
-            return basic + "/" + tp + SummaryString + buildUri;
+            return tpc + "/" + tp + SummaryString + buildUri;
         }
     }
 }
