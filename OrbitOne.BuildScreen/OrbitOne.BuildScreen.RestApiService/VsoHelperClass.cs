@@ -18,7 +18,7 @@ namespace OrbitOne.BuildScreen.RestApiService
         private readonly IConfigurationRestService _configurationRestService;
 
         /* URL-part for a summary on Visual Studio Online, used when buildStatus is not inProgress */
-        private const string SummaryString = "/_build#_a=summary&buildUri=";
+        private const string SummaryString = "/_build#_a=summary&buildId=";
 
         /* URL-part for a log on Visual Studio Online, used when buildStatus is inProgress */
         private const string LogString = "/_build#_a=log&buildUri=";
@@ -77,8 +77,27 @@ namespace OrbitOne.BuildScreen.RestApiService
         {
             var urlpart = (summary) ? SummaryString : LogString;
 
-            return _config.Uri + "/DefaultCollection/" + teamProjectName + urlpart +
-                   buildUri;
+            var firstPart = _config.Uri + "/DefaultCollection/" + teamProjectName + urlpart;
+            
+            var lastIndexOf = buildUri.LastIndexOf("/");
+            var number = "";
+           
+            try
+            {
+                if (lastIndexOf != -1)
+                {
+                    var temp = buildUri.Substring(lastIndexOf, buildUri.Length - lastIndexOf);
+                    number = temp.Replace("/", "");
+                }
+            }
+            catch (Exception ex)
+            {
+                LogService.WriteError(ex);
+            }
+           
+
+            return firstPart + number;
         }
     }
 }
+
