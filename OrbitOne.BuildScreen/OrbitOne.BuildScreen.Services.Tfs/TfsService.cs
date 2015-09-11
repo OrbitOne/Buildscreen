@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.TeamFoundation.Build.Client;
+﻿using Microsoft.TeamFoundation.Build.Client;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.Framework.Client;
 using Microsoft.TeamFoundation.Framework.Common;
 using Microsoft.TeamFoundation.TestManagement.Client;
 using OrbitOne.BuildScreen.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace OrbitOne.BuildScreen.Services.Tfs
 {
@@ -146,7 +146,7 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                         TeamProjectCollection = teamProjectCollection.Name,
                         TotalNumberOfTests = 0,
                         Id = "TFS" + teamProjectNode.Resource.Identifier + def.Id,
-                        BuildReportUrl = _helperClass.GetReportUrl(teamProjectCollection.Name, teamProjectNode.Resource.DisplayName, build.Uri.OriginalString)
+                        BuildReportUrl = _helperClass.GetReportUrl(teamProjectCollection.Uri.AbsoluteUri, teamProjectNode.Resource.DisplayName, build.Uri.OriginalString)
                     };
                     //Retrieve testruns
                     var testResults = GetTestResults(teamProjectNode, testService, build);
