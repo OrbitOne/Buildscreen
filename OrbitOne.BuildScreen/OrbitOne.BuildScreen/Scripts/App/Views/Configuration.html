@@ -123,7 +123,7 @@
         </fieldset>
 
         <fieldset class="form-fieldset ui-input">
-            <input type="url" name="tfsUrl" id="tfs-url" ng-pattern="/^(https?:\/\/)([\da-z\.-:]+)(\/tfs)$/" data-ng-model="newTfsConfig.Uri" tabindex="0" ng-blur="onBlur($event)" required/>
+            <input type="url" name="tfsUrl" id="tfs-url" ng-pattern="/^(https?:\/\/)([\da-z\.\-:]+)(\/tfs)$/" data-ng-model="newTfsConfig.Uri" tabindex="0" ng-blur="onBlur($event)" required/>
             <label for="tfs-url">
                 <span data-text="TFS URL">TFS URL</span>
                 <span data-text="is not a valid URL" ng-show="tfsForm.tfsUrl.$invalid && !tfsForm.tfsUrl.$pristine"> is not a valid URL</span>
