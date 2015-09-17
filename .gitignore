@@ -187,3 +187,5 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+OrbitOne.BuildScreen/OrbitOne.BuildScreen/App_Data/Configuration.json
+OrbitOne.BuildScreen/OrbitOne.BuildScreen/Log/Log.txt

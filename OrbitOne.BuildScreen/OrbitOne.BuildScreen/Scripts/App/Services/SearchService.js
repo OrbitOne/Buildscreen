@@ -85,15 +85,14 @@
         if (localStorage.getItem("TeamProjectTags")) {
             this.updateTeamProjectTags(this.TeamProjectTags = JSON.parse(localStorage.getItem("TeamProjectTags")));
         };
-        if (localStorage.getItem("simpleFilter")) {
-            this.searchKey = localStorage.getItem("simpleFilter");
+        if (localStorage.getItem("searchValue")) {
+            this.searchKey = localStorage.getItem("searchValue");
         };
         if (localStorage.getItem("checkValue")) {
             this.model.checkValue = localStorage.getItem("checkValue") === "true" ? true : false;
         };
         if (localStorage.getItem("dateFilter")) {
             this.dateFilter = JSON.parse(localStorage.getItem("dateFilter"));
-            //this.initialize();
         } else {
             this.dateFilter = {
                 week: 0,
