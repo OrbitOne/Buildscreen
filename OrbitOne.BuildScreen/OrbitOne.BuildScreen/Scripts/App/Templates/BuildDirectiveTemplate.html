@@ -3,7 +3,7 @@
     <span id="dateFilter" data-date="{{build.StartBuildDateTime}}" /> <!--This is because of Isotope/Angular compatibility problem-->
 
     <div class="aspect-content">
-        <p class="item-title" title="{{build.Builddefinition}}">{{build.Builddefinition | titleFilter:18}}</p>
+        <p class="item-title" ng-class="getTitleSizeClass(build.Builddefinition)" title="{{build.Builddefinition}}">{{build.Builddefinition | titleFilter:52 }}</p>
         <p class="item-subtitle" title="{{build.TeamProject}}">{{build.TeamProject | titleFilter:25}}</p>
         <div class="itemcontent">
             <p ng-if="build.Status !== 'inProgress' && build.Status !== 'notStarted'">
@@ -54,6 +54,5 @@
         <div class="avatar" ng-if="isStatusImportant(build.Status)">
             <img no-avatar ng-src="{{build.RequestedByPictureUrl}}" alt="avatar"/>
         </div>
-
     </div>
 </div>
