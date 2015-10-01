@@ -7,6 +7,8 @@ namespace OrbitOne.BuildScreen.Models
         public DateTime FinishTime { get; set; }
         public DateTime StartTime { get; set; }
         public string Status { get; set; }
+        public string Result { get; set; }
+        public RequestedFor RequestedFor { get; set; }
         public Request[] Requests { get; set; }
         public string Uri { get; set; }
         public Definition Definition { get; set; }
