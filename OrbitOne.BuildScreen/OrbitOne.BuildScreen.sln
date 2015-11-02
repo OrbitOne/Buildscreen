@@ -1,26 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen", "OrbitOne.BuildScreen\OrbitOne.BuildScreen.csproj", "{162F0C57-0D3C-4C85-9FA6-E78EC780365B}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A7453245-804D-4DE8-95C0-0D2D6641A3C2} = {A7453245-804D-4DE8-95C0-0D2D6641A3C2}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Configuration", "OrbitOne.BuildScreen.Configuration\OrbitOne.BuildScreen.Configuration.csproj", "{28B2602A-F3AA-47E5-ADB5-A699CC2982CD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Services.Vso", "OrbitOne.BuildScreen.RestApiService\OrbitOne.BuildScreen.Services.Vso.csproj", "{B2044920-AD64-4476-A57D-59A4D45E0507}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Models", "OrbitOne.BuildScreen.Models\OrbitOne.BuildScreen.Models.csproj", "{0086B2C2-E19B-4408-B1DF-FC45CB137938}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.DependencyInjection", "OrbitOne.BuildScreen.DependencyInjection\OrbitOne.BuildScreen.DependencyInjection.csproj", "{C4447533-D8A9-4BDD-9F19-75FE8A848FF7}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A7453245-804D-4DE8-95C0-0D2D6641A3C2} = {A7453245-804D-4DE8-95C0-0D2D6641A3C2}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.Buildscreen.LoadTest", "OrbitOne.Buildscreen.LoadTest\OrbitOne.Buildscreen.LoadTest.csproj", "{16D95D6A-3FC4-4894-9261-F600D2A4C94D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2C64773B-3426-414B-91EE-D4952ECD8D89}"
 	ProjectSection(SolutionItems) = preProject
 		COPYING.txt = COPYING.txt
@@ -38,6 +20,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", 
 		Assemblies\Microsoft.VisualStudio.Services.Client.dll = Assemblies\Microsoft.VisualStudio.Services.Client.dll
 		Assemblies\Microsoft.VisualStudio.Services.Common.dll = Assemblies\Microsoft.VisualStudio.Services.Common.dll
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen", "OrbitOne.BuildScreen\OrbitOne.BuildScreen.csproj", "{162F0C57-0D3C-4C85-9FA6-E78EC780365B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7453245-804D-4DE8-95C0-0D2D6641A3C2} = {A7453245-804D-4DE8-95C0-0D2D6641A3C2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Configuration", "OrbitOne.BuildScreen.Configuration\OrbitOne.BuildScreen.Configuration.csproj", "{28B2602A-F3AA-47E5-ADB5-A699CC2982CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Services.Vso", "OrbitOne.BuildScreen.RestApiService\OrbitOne.BuildScreen.Services.Vso.csproj", "{B2044920-AD64-4476-A57D-59A4D45E0507}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Models", "OrbitOne.BuildScreen.Models\OrbitOne.BuildScreen.Models.csproj", "{0086B2C2-E19B-4408-B1DF-FC45CB137938}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.DependencyInjection", "OrbitOne.BuildScreen.DependencyInjection\OrbitOne.BuildScreen.DependencyInjection.csproj", "{C4447533-D8A9-4BDD-9F19-75FE8A848FF7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7453245-804D-4DE8-95C0-0D2D6641A3C2} = {A7453245-804D-4DE8-95C0-0D2D6641A3C2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.Buildscreen.LoadTest", "OrbitOne.Buildscreen.LoadTest\OrbitOne.Buildscreen.LoadTest.csproj", "{16D95D6A-3FC4-4894-9261-F600D2A4C94D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbitOne.BuildScreen.Services.Tfs", "OrbitOne.BuildScreen.Services.Tfs\OrbitOne.BuildScreen.Services.Tfs.csproj", "{A7453245-804D-4DE8-95C0-0D2D6641A3C2}"
 EndProject
