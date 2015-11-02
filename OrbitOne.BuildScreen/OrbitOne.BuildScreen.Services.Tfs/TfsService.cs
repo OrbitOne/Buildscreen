@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.TeamFoundation.Build.Client;
+﻿using Microsoft.TeamFoundation.Build.Client;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.Framework.Client;
 using Microsoft.TeamFoundation.Framework.Common;
 using Microsoft.TeamFoundation.TestManagement.Client;
 using OrbitOne.BuildScreen.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace OrbitOne.BuildScreen.Services.Tfs
 {
@@ -186,6 +186,10 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                 buildDetailSpec.QueryOrder = BuildQueryOrder.FinishTimeDescending;
                 buildDetailSpec.MinFinishTime = filterDate;
 
+                //Performance optimalization
+                buildDetailSpec.InformationTypes = null;
+                buildDetailSpec.QueryOptions = QueryOptions.Definitions | QueryOptions.BatchedRequests;
+
                 build = buildServer.QueryBuilds(buildDetailSpec).Builds.FirstOrDefault();
             }
             catch (Exception e)
@@ -207,6 +211,10 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                 inProgressBuildDetailSpec.Status = BuildStatus.Succeeded;
                 inProgressBuildDetailSpec.MaxBuildsPerDefinition = 1;
                 inProgressBuildDetailSpec.QueryOrder = BuildQueryOrder.FinishTimeDescending;
+
+                //Performance optimalization
+                inProgressBuildDetailSpec.InformationTypes = null;
+                inProgressBuildDetailSpec.QueryOptions = QueryOptions.None;
 
                 var lastSuccesfulBuild = buildServer.QueryBuilds(inProgressBuildDetailSpec).Builds.FirstOrDefault();
 
