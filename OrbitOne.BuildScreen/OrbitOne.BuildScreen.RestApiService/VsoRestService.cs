@@ -78,6 +78,12 @@ namespace OrbitOne.BuildScreen.RestApiService
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
                         Id = "VSO" + teamProjectId + build.Definition.Id
                     };
+
+                    if(buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
+                    {
+                        buildInfoDto.RequestedByName = "Service Account";
+                    }
+
                     if (build.Status.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.inProgress)))
                     {
                         buildInfoDto.BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, false);
@@ -245,6 +251,12 @@ namespace OrbitOne.BuildScreen.RestApiService
                     BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, true),
                     Id = "VSO" + teamProjectId + bdId
                 };
+
+                if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
+                {
+                    buildInfoDto.RequestedByName = "Service Account";
+                }
+
                 if (latestBuild.Status.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.inProgress)))
                 {
                     buildInfoDto.BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, false);
