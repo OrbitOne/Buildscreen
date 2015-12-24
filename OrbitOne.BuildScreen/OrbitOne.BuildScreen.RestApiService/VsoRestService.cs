@@ -67,12 +67,12 @@ namespace OrbitOne.BuildScreen.RestApiService
                     var buildInfoDto = new BuildInfoDto
                     {
                         TeamProject = teamProjectName,
-                        Status = build.Result,
+                        Status = build.Result ?? build.Status,
                         Builddefinition = build.Definition.Name,
                         StartBuildDateTime = build.StartTime,
                         FinishBuildDateTime = build.FinishTime,
                         RequestedByName = build.RequestedFor.DisplayName,
-                        RequestedByPictureUrl = build.RequestedFor.ImageUrl,
+                        RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
                         TotalNumberOfTests = 0,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
@@ -234,12 +234,12 @@ namespace OrbitOne.BuildScreen.RestApiService
                 buildInfoDto = new BuildInfoDto
                 {
                     TeamProject = teamProjectName,
-                    Status = latestBuild.Result,
+                    Status = latestBuild.Result ?? latestBuild.Status,
                     Builddefinition = bdName,
                     StartBuildDateTime = latestBuild.StartTime,
                     FinishBuildDateTime = latestBuild.FinishTime,
                     RequestedByName = latestBuild.RequestedFor.DisplayName,
-                    RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl,
+                    RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl + "&size=2",
                     TotalNumberOfTests = 0,
                     PassedNumberOfTests = 0,
                     BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, true),

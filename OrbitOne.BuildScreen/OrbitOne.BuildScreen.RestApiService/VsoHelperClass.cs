@@ -75,6 +75,11 @@ namespace OrbitOne.BuildScreen.RestApiService
 
         public string ConvertReportUrl(string teamProjectName, string buildUri, Boolean summary)
         {
+            if (string.IsNullOrEmpty(buildUri))
+            {
+                return _config.Uri + "/DefaultCollection/" + teamProjectName + "/_build";
+            }
+
             var urlpart = (summary) ? SummaryString : LogString;
 
             var firstPart = _config.Uri + "/DefaultCollection/" + teamProjectName + urlpart;
