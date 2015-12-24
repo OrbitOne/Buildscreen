@@ -11,6 +11,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
+using Microsoft.TeamFoundation;
 using Microsoft.TeamFoundation.Client;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -57,7 +58,7 @@ namespace OrbitOne.BuildScreen.Configuration
                 LogService.WriteError(e);
                 throw;
             }
-            
+
         }
         public static void UpdateConfiguration(int id, ServiceConfig ic)
         {
@@ -67,7 +68,7 @@ namespace OrbitOne.BuildScreen.Configuration
             if (configuration == null)
                 throw new ArgumentException("Configuration with Id \"" + ic.Id + "\" can't be found.");
             if (string.IsNullOrEmpty(ic.Password) || ic.Password.Equals(ReturnPassword))
-            { 
+            {
                 var password = configuration.Password;
                 ic.Password = password;
             }
@@ -94,7 +95,7 @@ namespace OrbitOne.BuildScreen.Configuration
             {
                 LogService.WriteError(e);
                 throw;
-            } 
+            }
             return configs;
         }
 
@@ -179,7 +180,7 @@ namespace OrbitOne.BuildScreen.Configuration
             List<ServiceConfig> configs = null;
             try
             {
-                configs = GetListOfConfigurationsInternal().Select(c =>{c.Password = ReturnPassword; return c;}).ToList();
+                configs = GetListOfConfigurationsInternal().Select(c => { c.Password = ReturnPassword; return c; }).ToList();
             }
             catch (Exception e)
             {
@@ -242,6 +243,10 @@ namespace OrbitOne.BuildScreen.Configuration
             }
             catch (AggregateException e)
             {
+                if (e.InnerException is Exception)
+                {
+                    return e.InnerException.Message;
+                }
                 return "DNS could not find server adress";
             }
             catch (Exception e)
@@ -254,35 +259,34 @@ namespace OrbitOne.BuildScreen.Configuration
         private static async Task<bool> CanLogIn(string username, string password, string uri, string configType)
         {
             bool response = false;
-            try
+            // VSO check
+            if (configType == "VSO")
             {
-                // VSO check
-                if (configType == "VSO")
+                using (var client = new HttpClient())
                 {
-                    using (var client = new HttpClient())
-                    {
-                        client.BaseAddress = new Uri(uri);
-                        client.DefaultRequestHeaders.Accept.Clear();
-                        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-                            Convert.ToBase64String(
-                                Encoding.ASCII.GetBytes(string.Format("{0}:{1}", username, password))));
-                        Debug.WriteLine("Code: " + client.GetAsync("").Result.StatusCode);
-                        response = client.GetAsync("").Result.StatusCode == HttpStatusCode.OK;
-                    }
-                }
-                // TFS check
-                else if (configType == "TFS")
-                {
-                    var credentials = new TfsClientCredentials(new WindowsCredential(new NetworkCredential(username, password)));
-                    var server = new TfsConfigurationServer(new Uri(uri), credentials);
-                    server.EnsureAuthenticated();
-                    response = server.HasAuthenticated;
+                    client.BaseAddress = new Uri(uri);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
+                        Convert.ToBase64String(
+                            Encoding.ASCII.GetBytes(string.Format("{0}:{1}", username, password))));
+                    Debug.WriteLine("Code: " + client.GetAsync("").Result.StatusCode);
+                    response = client.GetAsync("").Result.StatusCode == HttpStatusCode.OK;
                 }
             }
-            catch (Exception e)
-            { 
-                LogService.WriteError(e);
-                throw;
+            // TFS check
+            else if (configType == "TFS")
+            {
+                var credentials = new TfsClientCredentials(new WindowsCredential(new NetworkCredential(username, password)));
+                var server = new TfsConfigurationServer(new Uri(uri), credentials);
+                try
+                {
+                    server.EnsureAuthenticated();
+                }
+                catch (TeamFoundationServerUnauthorizedException e)
+                {
+                    return false;
+                }
+                response = server.HasAuthenticated;
             }
             return response;
         }
