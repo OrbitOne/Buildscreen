@@ -97,7 +97,7 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-For any feedback relating to this software, feel free to contact us at: service@orbitone.com
+For any feedback relating to this software please open a Github issue so everybody can contribute, we are notified of every issue! If all else fails you to contact us at: service@orbitone.com
 
 #### Dependencies
 
