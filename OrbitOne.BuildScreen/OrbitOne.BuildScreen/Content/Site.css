@@ -147,7 +147,6 @@ body {
     margin-bottom: 5px;
     margin-top: 5px;
     margin-top: 5px;
-    word-break: break-all;
 }
 
 .item-subtitle {
@@ -255,14 +254,6 @@ body {
         margin-bottom: -0.5vw;
     }
 
-    .item-title-s {
-        font-size: 1.5vw;
-    }
-
-    .item-title-xs {
-        font-size: 1.4vw;
-    }
-
     .item-subtitle {
         font-size: 1.2vw;
     }
@@ -329,15 +320,6 @@ body {
     .item-title {
         font-size: 2.6vw;
         margin-bottom: -0.7vw;
-    }
-
-
-    .item-title-s {
-        font-size: 2.4vw;
-    }
-
-    .item-title-xs {
-        font-size: 2.2vw;
     }
 
     .item-subtitle {
@@ -413,15 +395,6 @@ body {
     .item-title {
         font-size: 8vw;
         margin-bottom: 0vw;
-    }
-
-
-    .item-title-s {
-        font-size: 7.5vw;
-    }
-
-    .item-title-xs {
-        font-size: 7vw;
     }
 
     .item-subtitle {

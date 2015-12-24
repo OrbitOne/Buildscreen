@@ -123,16 +123,6 @@
                 }
             }
 
-            $scope.getTitleSizeClass = function (title) {
-                if (title.length < 19) {
-                    return 'item-title-l';
-                } else if (title.length < 37) {
-                    return 'item-title-s';
-                }
-
-                return 'item-title-xs';
-            }
-
             $scope.$on("$destroy", function () {
                 $scope.poll = function () { };
                 $scope.retrieveBuildsFirstTime = function () { };
