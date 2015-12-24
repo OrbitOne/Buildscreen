@@ -60,19 +60,19 @@ namespace OrbitOne.BuildScreen.RestApiService
         {
             List<BuildInfoDto> dtos = new List<BuildInfoDto>();
             try
-            {                
+            {
                 var polledBuilds = GetPolledBuilds(teamProjectName, finishTime);
                 Parallel.ForEach(polledBuilds, new ParallelOptions { MaxDegreeOfParallelism = DegreeOfParallelism }, build =>
                 {
                     var buildInfoDto = new BuildInfoDto
                     {
                         TeamProject = teamProjectName,
-                        Status = build.Status,
+                        Status = build.Result ?? build.Status,
                         Builddefinition = build.Definition.Name,
                         StartBuildDateTime = build.StartTime,
                         FinishBuildDateTime = build.FinishTime,
-                        RequestedByName = build.Requests.First().RequestedFor.DisplayName,
-                        RequestedByPictureUrl = build.Requests.First().RequestedFor.ImageUrl + "&size=2",
+                        RequestedByName = build.RequestedFor.DisplayName,
+                        RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
                         TotalNumberOfTests = 0,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
@@ -82,13 +82,15 @@ namespace OrbitOne.BuildScreen.RestApiService
                     {
                         buildInfoDto.BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, false);
                         var lastBuildTime = GetLastBuildTime(teamProjectName, build);
+                        buildInfoDto.Status = StatusEnum.Statuses.inProgress.ToString();
                         if (lastBuildTime != null)
                         {
                             buildInfoDto.LastBuildTime = lastBuildTime.FinishTime - lastBuildTime.StartTime;
                         }
                     }
                     if (
-                        build.Status.Equals(Enum.GetName(typeof(StatusEnum.Statuses),
+                      build.Result != null &&
+                      build.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses),
                             StatusEnum.Statuses.partiallySucceeded)))
                     {
                         var results = GetTestResults(teamProjectName, build.Uri);
@@ -225,19 +227,19 @@ namespace OrbitOne.BuildScreen.RestApiService
                 var latestBuild =
                     _helperClass
                         .RetrieveTask<Build>(
-                        (String.Format(_configurationRestService.RetrieveLastBuildAsyncUrl, teamProjectName, bdUri)))
+                        (String.Format(_configurationRestService.RetrieveLastBuildAsyncUrl, teamProjectName, bdId)))
                         .Result
                         .FirstOrDefault();
                 if (latestBuild == null) return null;
                 buildInfoDto = new BuildInfoDto
                 {
                     TeamProject = teamProjectName,
-                    Status = latestBuild.Status,
+                    Status = latestBuild.Result ?? latestBuild.Status,
                     Builddefinition = bdName,
                     StartBuildDateTime = latestBuild.StartTime,
                     FinishBuildDateTime = latestBuild.FinishTime,
-                    RequestedByName = latestBuild.Requests.First().RequestedFor.DisplayName,
-                    RequestedByPictureUrl = latestBuild.Requests.First().RequestedFor.ImageUrl + "&size=2",
+                    RequestedByName = latestBuild.RequestedFor.DisplayName,
+                    RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl + "&size=2",
                     TotalNumberOfTests = 0,
                     PassedNumberOfTests = 0,
                     BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, true),
@@ -246,6 +248,7 @@ namespace OrbitOne.BuildScreen.RestApiService
                 if (latestBuild.Status.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.inProgress)))
                 {
                     buildInfoDto.BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, false);
+                    buildInfoDto.Status = StatusEnum.Statuses.inProgress.ToString();
                     var secondLastBuildList =
                          _helperClass.RetrieveTask<Build>(
                         (String.Format(_configurationRestService.RetrieveLastSuccessfulBuildUrl, teamProjectName, bdUri))).Result;
@@ -257,7 +260,8 @@ namespace OrbitOne.BuildScreen.RestApiService
                     }
 
                 }
-                if (latestBuild.Status.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.partiallySucceeded)))
+                if (latestBuild.Result != null &&
+                    latestBuild.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.partiallySucceeded)))
                 {
                     var results = GetTestResults(teamProjectName, latestBuild.Uri);
                     if (results != null)
