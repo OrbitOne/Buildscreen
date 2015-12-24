@@ -231,6 +231,7 @@
     <Content Include="Images\avatar.png" />
     <Content Include="Images\gplaypatternDark.png" />
     <Content Include="Images\Orbit_one_circle.png" />
+    <Content Include="Images\unknownuser.png" />
     <Content Include="Scripts\aes.js" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -358,7 +359,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>16279</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
