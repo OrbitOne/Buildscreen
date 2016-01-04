@@ -185,8 +185,6 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                 buildDetailSpec.MaxBuildsPerDefinition = 1;
                 buildDetailSpec.QueryOrder = BuildQueryOrder.FinishTimeDescending;
                 buildDetailSpec.MinFinishTime = filterDate;
-                buildDetailSpec.InformationTypes = null;
-                buildDetailSpec.QueryOptions = QueryOptions.Definitions | QueryOptions.BatchedRequests;
 
                 build = buildServer.QueryBuilds(buildDetailSpec).Builds.FirstOrDefault();
             }
@@ -209,8 +207,6 @@ namespace OrbitOne.BuildScreen.Services.Tfs
                 inProgressBuildDetailSpec.Status = BuildStatus.Succeeded;
                 inProgressBuildDetailSpec.MaxBuildsPerDefinition = 1;
                 inProgressBuildDetailSpec.QueryOrder = BuildQueryOrder.FinishTimeDescending;
-                inProgressBuildDetailSpec.InformationTypes = null;
-                inProgressBuildDetailSpec.QueryOptions = QueryOptions.None;
 
                 var lastSuccesfulBuild = buildServer.QueryBuilds(inProgressBuildDetailSpec).Builds.FirstOrDefault();
 
