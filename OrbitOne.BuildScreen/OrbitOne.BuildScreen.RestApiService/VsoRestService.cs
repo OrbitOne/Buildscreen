@@ -73,7 +73,7 @@ namespace OrbitOne.BuildScreen.RestApiService
                         FinishBuildDateTime = build.FinishTime,
                         RequestedByName = build.RequestedFor.DisplayName,
                         RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
-                        TotalNumberOfTests = 0,
+                        TotalNumberOfTests = 12,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
                         Id = "VSO" + teamProjectId + build.Definition.Id

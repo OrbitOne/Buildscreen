@@ -1,4 +1,5 @@
-﻿<div class="item" ng-class="[build.Status, isStatusImportant(build.Status) ? 'wrapper-large' : 'wrapper']">
+﻿<div class="item box" ng-class="[build.Status, isStatusImportant(build.Status) ? 'wrapper-large' : 'wrapper']">
+    <div ng-if="build.TotalNumberOfTests > 0" class="ribbon"><span>{{build.PassedNumberOfTests}}/{{build.TotalNumberOfTests}}</span></div>
 
     <span id="dateFilter" data-date="{{build.StartBuildDateTime}}" /> <!--This is because of Isotope/Angular compatibility problem-->
 
@@ -25,21 +26,21 @@
                 <div ng-switch-when="failed" class="circle">
                     <div class="builderror-label">
                         <p>
-                            Build<br />failed
+                            Build<br/>failed
                         </p>
                     </div>
                 </div>
                 <div ng-switch-when="stopped" class="circle">
                     <div class="builderror-label">
                         <p>
-                            Build<br />stopped
+                            Build<br/>stopped
                         </p>
                     </div>
                 </div>
                 <div ng-switch-when="notStarted" class="circle">
                     <div class="builderror-label">
                         <p>
-                            Not<br />started
+                            Not<br/>started
                         </p>
                     </div>
                 </div>
@@ -52,7 +53,7 @@
             </a>
         </div>
         <div class="avatar" ng-if="isStatusImportant(build.Status)">
-            <img no-avatar ng-src="{{build.RequestedByPictureUrl}}" alt="avatar" />
+            <img no-avatar ng-src="{{build.RequestedByPictureUrl}}" alt="avatar"/>
         </div>
     </div>
 </div>
