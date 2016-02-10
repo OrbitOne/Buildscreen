@@ -79,7 +79,7 @@ namespace OrbitOne.BuildScreen.RestApiService
                         Id = "VSO" + teamProjectId + build.Definition.Id
                     };
 
-                    if(buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
+                    if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
                     {
                         buildInfoDto.RequestedByName = "Service Account";
                     }
@@ -147,12 +147,18 @@ namespace OrbitOne.BuildScreen.RestApiService
             Build secondLastBuild = null;
             try
             {
-                secondLastBuild = _helperClass.RetrieveTask<Build>(String.Format(_configurationRestService.RetrieveLastSuccessfulBuildUrl, teamProjectName,
-                String.Format(_configurationRestService.BuildDefinitionUri, build.Definition.Id))).Result.FirstOrDefault()
+                secondLastBuild = _helperClass.RetrieveTask<Build>(
+                    String.Format(
+                        _configurationRestService.RetrieveLastSuccessfulBuildUrl,
+                        teamProjectName,
+                        build.Definition.Id)
+                        ).Result.FirstOrDefault()
                   ??
                   _helperClass.RetrieveTask<Build>(
-                      String.Format(_configurationRestService.RetriveLastPartiallyOrFailedUrl, teamProjectName,
-                          String.Format(_configurationRestService.BuildDefinitionUri, build.Definition.Id)))
+                      String.Format(
+                          _configurationRestService.RetriveLastPartiallyOrFailedUrl,
+                          teamProjectName,
+                          build.Definition.Id))
                       .Result.FirstOrDefault();
             }
             catch (Exception e)
@@ -263,7 +269,7 @@ namespace OrbitOne.BuildScreen.RestApiService
                     buildInfoDto.Status = StatusEnum.Statuses.inProgress.ToString();
                     var secondLastBuildList =
                          _helperClass.RetrieveTask<Build>(
-                        (String.Format(_configurationRestService.RetrieveLastSuccessfulBuildUrl, teamProjectName, bdUri))).Result;
+                        (String.Format(_configurationRestService.RetrieveLastSuccessfulBuildUrl, teamProjectName, bdId))).Result;
 
                     var secondLastBuild = secondLastBuildList.FirstOrDefault();
                     if (secondLastBuild != null)
