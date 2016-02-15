@@ -55,7 +55,11 @@ namespace OrbitOne.BuildScreen.RestApiService
                             await response.Content.ReadAsStringAsync();
                         objects =
                             JsonConvert.DeserializeObject<JsonWrapper<T>>(jsonstr).Value;
-                    } 
+                    }
+                    else
+                    {
+                        LogService.WriteInfo(string.Format("Invalid request {0}: status {1}", formattedUrl, response.StatusCode));
+                    }
                 }
             }
             catch (AggregateException e)
@@ -83,10 +87,10 @@ namespace OrbitOne.BuildScreen.RestApiService
             var urlpart = (summary) ? SummaryString : LogString;
 
             var firstPart = _config.Uri + "/DefaultCollection/" + teamProjectName + urlpart;
-            
+
             var lastIndexOf = buildUri.LastIndexOf("/");
             var number = "";
-           
+
             try
             {
                 if (lastIndexOf != -1)
@@ -99,7 +103,7 @@ namespace OrbitOne.BuildScreen.RestApiService
             {
                 LogService.WriteError(ex);
             }
-           
+
 
             return firstPart + number;
         }
