@@ -36,11 +36,13 @@ namespace OrbitOne.BuildScreen.RestApiService
                 Parallel.ForEach(teamProjects, new ParallelOptions { MaxDegreeOfParallelism = DegreeOfParallelism }, teamProject =>
                 {
                     var tempListOfBuildsPerTeamProject = GetBuildsForPollingSince(teamProject.Name, teamProject.Id, sinceDateTime).ToList();
+
                     tempListOfBuildsPerTeamProject = tempListOfBuildsPerTeamProject.GroupBy(b => b.Id)
                         .Select(b => b.OrderByDescending(d => d.StartBuildDateTime).FirstOrDefault())
                         .ToList();
 
                     if (!tempListOfBuildsPerTeamProject.Any()) return;
+
                     lock (dtoPollList)
                     {
                         dtoPollList.AddRange(tempListOfBuildsPerTeamProject);
@@ -73,7 +75,7 @@ namespace OrbitOne.BuildScreen.RestApiService
                         FinishBuildDateTime = build.FinishTime,
                         RequestedByName = build.RequestedFor.DisplayName,
                         RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
-                        TotalNumberOfTests = 12,
+                        TotalNumberOfTests = 0,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
                         Id = "VSO" + teamProjectId + build.Definition.Id
@@ -94,12 +96,11 @@ namespace OrbitOne.BuildScreen.RestApiService
                             buildInfoDto.LastBuildTime = lastBuildTime.FinishTime - lastBuildTime.StartTime;
                         }
                     }
-                    if (
-                      build.Result != null &&
-                      build.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses),
-                            StatusEnum.Statuses.partiallySucceeded)))
+                    //if ( build.Result != null && build.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.partiallySucceeded)))
+                    if (build.Result != null)
                     {
                         var results = GetTestResults(teamProjectName, build.Uri);
+                        
                         if (results != null)
                         {
                             buildInfoDto.TotalNumberOfTests = results.Count;
@@ -123,7 +124,7 @@ namespace OrbitOne.BuildScreen.RestApiService
 
         private IEnumerable<Build> GetPolledBuilds(string teamProjectName, DateTime finishTime)
         {
-            var polledBuilds = new List<Build> { };
+            var polledBuilds = new List<Build>();
             try
             {
                 var onFinishTimeBuilds = _helperClass.RetrieveTask<Build>(String.Format(_configurationRestService.RetrieveBuildsOnFinishtime,
@@ -272,8 +273,9 @@ namespace OrbitOne.BuildScreen.RestApiService
                     }
 
                 }
-                if (latestBuild.Result != null &&
-                    latestBuild.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.partiallySucceeded)))
+                //if (latestBuild.Result != null &&
+                //    latestBuild.Result.Equals(Enum.GetName(typeof(StatusEnum.Statuses), StatusEnum.Statuses.partiallySucceeded)))
+                if (latestBuild.Result != null)
                 {
                     var results = GetTestResults(teamProjectName, latestBuild.Uri);
                     if (results != null)
