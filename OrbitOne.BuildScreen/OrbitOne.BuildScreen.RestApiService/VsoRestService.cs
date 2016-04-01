@@ -103,9 +103,8 @@ namespace OrbitOne.BuildScreen.RestApiService
                         
                         if (results != null)
                         {
-                            buildInfoDto.TotalNumberOfTests = results.Count;
-                            buildInfoDto.PassedNumberOfTests =
-                                results.Count(r => r.Outcome.ToLower().Equals("passed"));
+                            buildInfoDto.TotalNumberOfTests = results.Count - results.Count(r => r.Outcome.ToLower().Equals("notexecuted"));
+                            buildInfoDto.PassedNumberOfTests = results.Count(r => r.Outcome.ToLower().Equals("passed"));
                         }
                     }
                     lock (dtos)
@@ -233,7 +232,6 @@ namespace OrbitOne.BuildScreen.RestApiService
         }
         private BuildInfoDto GetLatestBuild(string teamProjectName, string bdId, string bdUri, string bdName, string teamProjectId)
         {
-
             BuildInfoDto buildInfoDto = null;
             try
             {
@@ -286,9 +284,8 @@ namespace OrbitOne.BuildScreen.RestApiService
                     var results = GetTestResults(teamProjectName, latestBuild.Uri);
                     if (results != null)
                     {
-                        buildInfoDto.TotalNumberOfTests = results.Count;
-                        buildInfoDto.PassedNumberOfTests =
-                            results.Count(r => r.Outcome.ToLower().Equals("passed"));
+                        buildInfoDto.TotalNumberOfTests = results.Count - results.Count(r => r.Outcome.ToLower().Equals("notexecuted"));
+                        buildInfoDto.PassedNumberOfTests = results.Count(r => r.Outcome.ToLower().Equals("passed"));
                     }
                 }
             }
