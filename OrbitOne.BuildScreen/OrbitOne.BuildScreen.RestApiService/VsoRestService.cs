@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using OrbitOne.BuildScreen.Configuration;
@@ -17,7 +18,7 @@ namespace OrbitOne.BuildScreen.RestApiService
         /* This contrains the amount of parallel tasks, because there is nested
          * parallelism, there is a need to constrain this number. Testing has pointed out
          * that 4 is the best solution */
-        private const int DegreeOfParallelism = 4;
+        private const int DegreeOfParallelism = 1;
 
         public VsoRestService(IConfigurationRestService configurationRestService, IHelperClass helperClass)
         {
@@ -73,15 +74,19 @@ namespace OrbitOne.BuildScreen.RestApiService
                         Builddefinition = build.Definition.Name,
                         StartBuildDateTime = build.StartTime,
                         FinishBuildDateTime = build.FinishTime,
-                        RequestedByName = build.RequestedFor.DisplayName,
-                        RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
+                        //RequestedByName = build.RequestedFor.DisplayName,
+                        //RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
                         TotalNumberOfTests = 0,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
                         Id = "VSO" + teamProjectId + build.Definition.Id
                     };
 
-                    if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
+                    if (string.IsNullOrEmpty(buildInfoDto.RequestedByName))
+                    {
+                        buildInfoDto.RequestedByName = "No RequestedBy";
+                    }
+                    else if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
                     {
                         buildInfoDto.RequestedByName = "Service Account";
                     }
@@ -233,9 +238,10 @@ namespace OrbitOne.BuildScreen.RestApiService
         private BuildInfoDto GetLatestBuild(string teamProjectName, string bdId, string bdUri, string bdName, string teamProjectId)
         {
             BuildInfoDto buildInfoDto = null;
+            Build latestBuild = null;
             try
             {
-                var latestBuild =
+                 latestBuild =
                     _helperClass
                         .RetrieveTask<Build>(
                         (String.Format(_configurationRestService.RetrieveLastBuildAsyncUrl, teamProjectName, bdId)))
@@ -249,15 +255,19 @@ namespace OrbitOne.BuildScreen.RestApiService
                     Builddefinition = bdName,
                     StartBuildDateTime = latestBuild.StartTime,
                     FinishBuildDateTime = latestBuild.FinishTime,
-                    RequestedByName = latestBuild.RequestedFor.DisplayName,
-                    RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl + "&size=2",
+                    //RequestedByName = latestBuild.RequestedFor.DisplayName,
+                    //RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl + "&size=2",
                     TotalNumberOfTests = 0,
                     PassedNumberOfTests = 0,
                     BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, true),
                     Id = "VSO" + teamProjectId + bdId
                 };
 
-                if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
+                if (string.IsNullOrEmpty(buildInfoDto.RequestedByName))
+                {
+                    buildInfoDto.RequestedByName = "No RequestedBy";
+                }
+                else if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
                 {
                     buildInfoDto.RequestedByName = "Service Account";
                 }
@@ -291,6 +301,9 @@ namespace OrbitOne.BuildScreen.RestApiService
             }
             catch (Exception e)
             {
+                Debug.WriteLine(buildInfoDto);
+                Debug.WriteLine(latestBuild);
+
                 LogService.WriteError(e);
                 throw;
             }

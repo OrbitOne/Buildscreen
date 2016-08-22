@@ -1,0 +1,1131 @@
+22/08/2016 15:28:24 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:28:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:28:27 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 212
+
+22/08/2016 15:28:41 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 180
+
+22/08/2016 15:28:41 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:28:41 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:28:43 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:28:44 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:28:45 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 212
+
+22/08/2016 15:29:05 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:29:38 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:30:23 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 245
+
+22/08/2016 15:32:33 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 246
+
+22/08/2016 15:33:53 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 247
+
+22/08/2016 15:34:45 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:46 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:47 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:47 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:48 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:48 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:50 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:54 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:54 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:54 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:54 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:55 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:55 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:55 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:34:56 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:56 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:57 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:58 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:58 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:58 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:58 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:58 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:58 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:34:59 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:34:59 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:00 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:00 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:00 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:01 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:01 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:01 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:01 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:01 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:02 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:02 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:02 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:03 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:03 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:03 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:04 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:04 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:04 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:04 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:06 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:06 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:06 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:06 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:06 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:06 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:06 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:06 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:08 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:08 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:08 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:09 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:09 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:10 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:11 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:11 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:12 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:12 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:12 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:12 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:13 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:13 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:13 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:13 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:13 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:13 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:14 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:14 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:14 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:14 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:14 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:15 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:15 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:15 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:16 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:16 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:16 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:16 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:16 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:17 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:18 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:18 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:19 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:19 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:20 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:20 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:20 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:20 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:20 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:21 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:21 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:21 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:21 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:21 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:21 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:21 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:21 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:21 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:22 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:23 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:23 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:23 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:23 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:23 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:24 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:24 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:25 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:25 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:26 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:26 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:26 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:26 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildDefinitions(String teamProjectName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 213
+
+22/08/2016 15:35:26 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body)
+   at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetBuildInfoDtos() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 181
+
+22/08/2016 15:35:26 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 26
+
+22/08/2016 15:35:26 ERROR - Exception One or more errors occurred. 
+    at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](TSource[] array, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at OrbitOne.BuildScreen.Services.ServiceFacade.GetBuilds(String dateString) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.Services\ServiceFacade.cs:line 36
+   at OrbitOne.BuildScreen.Controllers.BuildscreenApiController.GetBuilds() in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen\Controllers\BuildscreenApiController.cs:line 26
+
+22/08/2016 15:35:26 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
+22/08/2016 15:35:36 ERROR - Exception Object reference not set to an instance of an object. 
+    at OrbitOne.BuildScreen.RestApiService.VsoRestService.GetLatestBuild(String teamProjectName, String bdId, String bdUri, String bdName, String teamProjectId) in C:\VSO\Buildscreen\OrbitOne.BuildScreen\OrbitOne.BuildScreen.RestApiService\VsoRestService.cs:line 262
+
