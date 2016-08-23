@@ -18,7 +18,7 @@ namespace OrbitOne.BuildScreen.RestApiService
         /* This contrains the amount of parallel tasks, because there is nested
          * parallelism, there is a need to constrain this number. Testing has pointed out
          * that 4 is the best solution */
-        private const int DegreeOfParallelism = 1;
+        private const int DegreeOfParallelism = 4;
 
         public VsoRestService(IConfigurationRestService configurationRestService, IHelperClass helperClass)
         {
@@ -74,8 +74,8 @@ namespace OrbitOne.BuildScreen.RestApiService
                         Builddefinition = build.Definition.Name,
                         StartBuildDateTime = build.StartTime,
                         FinishBuildDateTime = build.FinishTime,
-                        //RequestedByName = build.RequestedFor.DisplayName,
-                        //RequestedByPictureUrl = build.RequestedFor.ImageUrl + "&size=2",
+                        RequestedByName = build.RequestedFor?.DisplayName,
+                        RequestedByPictureUrl = build.RequestedFor?.ImageUrl + "&size=2",
                         TotalNumberOfTests = 0,
                         PassedNumberOfTests = 0,
                         BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, build.Uri, true),
@@ -84,7 +84,7 @@ namespace OrbitOne.BuildScreen.RestApiService
 
                     if (string.IsNullOrEmpty(buildInfoDto.RequestedByName))
                     {
-                        buildInfoDto.RequestedByName = "No RequestedBy";
+                        buildInfoDto.RequestedByName = "No Requester";
                     }
                     else if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
                     {
@@ -255,8 +255,8 @@ namespace OrbitOne.BuildScreen.RestApiService
                     Builddefinition = bdName,
                     StartBuildDateTime = latestBuild.StartTime,
                     FinishBuildDateTime = latestBuild.FinishTime,
-                    //RequestedByName = latestBuild.RequestedFor.DisplayName,
-                    //RequestedByPictureUrl = latestBuild.RequestedFor.ImageUrl + "&size=2",
+                    RequestedByName = latestBuild.RequestedFor?.DisplayName ,
+                    RequestedByPictureUrl = latestBuild.RequestedFor?.ImageUrl + "&size=2",
                     TotalNumberOfTests = 0,
                     PassedNumberOfTests = 0,
                     BuildReportUrl = _helperClass.ConvertReportUrl(teamProjectName, latestBuild.Uri, true),
@@ -265,7 +265,7 @@ namespace OrbitOne.BuildScreen.RestApiService
 
                 if (string.IsNullOrEmpty(buildInfoDto.RequestedByName))
                 {
-                    buildInfoDto.RequestedByName = "No RequestedBy";
+                    buildInfoDto.RequestedByName = "No Requester";
                 }
                 else if (buildInfoDto.RequestedByName.StartsWith("[DefaultCollection]"))
                 {
